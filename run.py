@@ -1,4 +1,4 @@
-def fibonnaci_linear(number):
+def fibonacci_linear(number):
     if type(number) == float:
         return 'Choose a intenger'
     if number < 0:
@@ -16,7 +16,7 @@ def fibonnaci_linear(number):
         
     return position_1
     
-def fibonnaci_recursive(number):
+def fibonacci_recursive(number):
     if type(number) == float:
         return 'Choose a intenger'
     if number < 0:
@@ -25,7 +25,7 @@ def fibonnaci_recursive(number):
         return 0
     if number == 1:
         return 1
-    return fibonnaci_recursive(number-1) + fibonnaci_recursive(number-2)
+    return fibonacci_recursive(number-1) + fibonacci_recursive(number-2)
 
 def prime_linear(number):
     if type(number) == float:
@@ -68,9 +68,9 @@ def prime_recursive(number):
     return prime_list
 
 def main():
-    print("Fibonnaci position")
-    print("Linear function:", fibonnaci_linear(6))
-    print("Recursive function:", fibonnaci_recursive(6))
+    print("fibonacci position")
+    print("Linear function:", fibonacci_linear(6))
+    print("Recursive function:", fibonacci_recursive(6))
     print("")
     print("Prime number list")
     print("Linear function:", prime_linear(10))
